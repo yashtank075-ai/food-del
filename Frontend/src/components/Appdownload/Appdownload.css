@@ -1,0 +1,24 @@
+.app-download {
+    margin-top: 100px;
+    text-align: center;
+    font-size: max(2vw,20px);
+}
+
+.app-download-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+
+.app-download-platforms img {
+    width: 180px;   /* same size */
+    height: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.app-download-platforms img:hover{
+    transform: scale(1.05);
+}

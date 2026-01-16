@@ -1,0 +1,63 @@
+.header{
+   background: url('/Header1.jpeg') no-repeat;
+   height: 34vw;
+   margin: 30px auto;
+   background-size: cover;
+   position: relative; 
+    border-radius: 24px;
+   margin: 0px;
+}  
+
+.headercontent{
+    display: flex;
+    flex-direction:column;
+    gap: 1.5vh;
+    align-items: start;
+    bottom: 10%;
+    left: 6vw;
+    position: absolute;
+    max-width: 50%;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    
+}
+
+.headercontent h2{
+        font-weight: 500;
+        font-size: max(4.5vw,22px);
+}
+
+.headercontent p{
+    font-size: 1vw;
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 480px;
+    color: #555;
+}
+
+.headercontent button{
+    font-size: 13px;
+    border: 1px solid rgb(172, 172, 227);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.headercontent button:hover{
+    transform: translateY(-2px);
+}
+
+@media (max-width:750px){
+    .header{
+       height:38vw;
+    }
+    .headercontent{
+        max-width: 45%;
+    }
+    .headercontent p{
+        display: none;
+    }
+
+    .headercontent button{
+        padding: 2vw 4vw;
+    }
+}

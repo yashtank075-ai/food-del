@@ -1,0 +1,69 @@
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position: fixed;                 /* ✅ FIXED */
+  top: 70px;                       /* navbar height */
+  left: 0;
+
+  width: 260px;                    /* ✅ FIXED WIDTH */
+  height: calc(100vh - 70px);      /* ✅ PERFECT HEIGHT */
+
+  background-color: #fff;
+
+  border-right: 1.5px solid #a9a9a9;
+  border-top: none;
+
+  overflow-y: auto;
+  z-index: 999;
+}
+
+/* ===== SIDEBAR OPTIONS ===== */
+.sidebar-options {
+  padding: 40px 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== SINGLE OPTION ===== */
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #a9a9a9;
+  border-right: none;
+
+  border-radius: 6px 0 0 6px;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sidebar-option:hover {
+  background-color: #f0f0f0;
+}
+
+/* ===== ACTIVE OPTION ===== */
+.sidebar-option.active {
+  background-color: #fff0ed;
+  border-color: #000;
+  font-weight: 500;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 80px;           /* icon-only sidebar */
+  }
+
+  .sidebar-option p {
+    display: none;
+  }
+
+  .sidebar-option {
+    justify-content: center;
+  }
+}

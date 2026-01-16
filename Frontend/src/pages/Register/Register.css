@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+.auth-image {
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-image {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.auth-image img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.auth-image:hover img {
+  transform: scale(1.1);
+}
+
+
+.auth-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+
+.auth-form h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.auth-form p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  padding: 14px 18px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #ff4f5a;
+}
+
+.auth-form button {
+  background: #ff4f5a;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-form button:hover {
+  background: #e8444e;
+}
+
+.auth-form span {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.auth-form a {
+  color: #ff4f5a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-image {
+    display: none;
+  }
+
+  .auth-form {
+    width: 100%;
+    padding: 40px;
+  }
+}

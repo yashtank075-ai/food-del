@@ -1,0 +1,135 @@
+.add {
+  margin-top: 70px;                 /* navbar height */
+  margin-left: 260px;               /* sidebar width ONLY */
+
+  min-height: calc(100vh - 70px);
+  padding: 40px;
+
+  background-color: #f4f6f8;
+
+  display: flex;
+  justify-content: flex-start;      /* ❌ remove center */
+  align-items: flex-start;
+}
+
+
+.add form {
+  margin: 0 auto;                   /* ✅ center form only */
+  width: 100%;
+  max-width: 520px;
+}
+
+/* ===== FLEX UTIL ===== */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ===== TEXT ===== */
+.add p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ===== INPUTS ===== */
+.add input,
+.add textarea,
+.add select {
+  width: 100%;
+  padding: 10px 12px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+
+  font-size: 14px;
+  outline: none;
+
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add input:focus,
+.add textarea:focus,
+.add select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+}
+
+.add textarea {
+  resize: none;
+}
+
+/* ===== IMAGE UPLOAD ===== */
+.add-img-upload {
+  align-items: center;
+  text-align: center;
+}
+
+.add-img-upload label {
+  cursor: pointer;
+}
+
+.add-img-upload img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 10px;
+
+  transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.add-img-upload img:hover {
+  border-color: #4caf50;
+  transform: scale(1.05);
+}
+
+/* ===== CATEGORY & PRICE ===== */
+.add-category-price {
+  display: flex;
+  gap: 15px;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+}
+
+/* ===== BUTTON ===== */
+.add-button {
+  margin-top: 10px;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 15px rgba(76, 175, 80, 0.3);
+}
+
+@media (max-width: 900px) {
+  .add {
+    margin-left: 80px;  /* collapsed sidebar */
+  }
+}
+
+@media (max-width: 768px) {
+  .add {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

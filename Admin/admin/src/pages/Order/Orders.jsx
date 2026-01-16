@@ -1,0 +1,11 @@
+import React from 'react'
+import './Orders.css'
+const Order = () => {
+  return (
+    <div className='orders'>
+      <h2>Orders</h2>
+    </div>
+  )
+}
+
+export default Order
